@@ -12,6 +12,7 @@ namespace ArrayProblems
             //MergeSortArray.Merge();
             //KthMaxElement.MaxElement();
             //KthMinElement.MinElement();
+            Sort0s1s2s.SortArray();
         }
     }
 }
