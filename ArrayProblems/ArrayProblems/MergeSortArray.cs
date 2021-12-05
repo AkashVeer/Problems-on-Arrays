@@ -37,18 +37,18 @@ namespace ArrayProblems
         {
             int n1 = m - l + 1;
             int n2 = r - m;
-
-            int[] arr1 = new int[n1];
-            int[] arr2 = new int[n2];
             int i, j;
 
-            for (i = 0; i < n1; i++)
+            int[] Left = new int[n1];
+            int[] Right = new int[n2];
+
+            for (i = 0; i < Left.Length; i++)
             {
-                arr1[i] = arr[l + i];
+                Left[i] = arr[l + i];
             }
-            for (j = 0; j < n2; j++)
+            for (j = 0; j < Right.Length; j++)
             {
-                arr2[j] = arr[m + 1 + j];
+                Right[j] = arr[m + 1 + j];
             }
 
             i = 0; j = 0;
@@ -56,14 +56,14 @@ namespace ArrayProblems
 
             while (i < n1 && j < n2)
             {
-                if (arr1[i] <= arr2[j])
+                if (Left[i] <= Right[j])
                 {
-                    arr[k] = arr1[i];
+                    arr[k] = Left[i];
                     i++;
                 }
                 else
                 {
-                    arr[k] = arr2[j];
+                    arr[k] = Right[j];
                     j++;
                 }
                 k++;
@@ -71,12 +71,12 @@ namespace ArrayProblems
 
             while (i < n1)
             {
-                arr[k] = arr1[i];
+                arr[k] = Left[i];
                 i++; k++;
             }
             while (j < n2)
             {
-                arr[k] = arr2[j];
+                arr[k] = Right[j];
                 j++; k++;
             }
 
