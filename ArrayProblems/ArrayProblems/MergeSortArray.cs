@@ -8,9 +8,13 @@ namespace ArrayProblems
 {
     internal static class MergeSortArray
     {
-        public static void Merge()
+        public static void Merge(int[] arr = null)
         {
-            int[] arr = { 4, 5, 2, 7, 10, 8 };
+            if(arr == null)
+            {
+                arr = new int[] { 4, 5, 2, 7, 10, 8 };
+            }
+            
             Sort(arr, 0, arr.Length - 1);
 
             foreach (var item in arr)

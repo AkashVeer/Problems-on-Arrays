@@ -10,6 +10,8 @@ namespace ArrayProblems
             //ReverseIntegerArray.Reverse();
             //MaxAndMinElementInArray.MaxAndMin();
             //MergeSortArray.Merge();
+            //KthMaxElement.MaxElement();
+            //KthMinElement.MinElement();
         }
     }
 }
