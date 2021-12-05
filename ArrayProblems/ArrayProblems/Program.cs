@@ -9,6 +9,7 @@ namespace ArrayProblems
             Console.WriteLine("All the solutions are commented. Uncomment and run whichever program you want to!");
             //ReverseIntegerArray.Reverse();
             //MaxAndMinElementInArray.MaxAndMin();
+            //MergeSortArray.Merge();
         }
     }
 }
